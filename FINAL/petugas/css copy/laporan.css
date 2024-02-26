@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Menggunakan font yang umum */
+    background-color: #f0f0f0; /* Warna latar belakang yang lebih netral */
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto; /* Pusatkan konten di tengah */
+    padding: 20px; /* Berikan sedikit ruang di sekitar konten */
+    background-color: #fff; /* Latar belakang konten */
+    border-radius: 10px; /* Sudut elemen yang lebih halus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan yang halus */
+}
+
+h1 {
+    text-align: center; /* Pusatkan judul */
+    margin-bottom: 20px; /* Ruang di bawah judul */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Gabungkan garis antar sel */
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Garis bawah setiap baris */
+}
+
+th {
+    background-color: #979797; /* Warna latar belakang untuk sel header */
+}
+
+/* Gaya tabel yang berbeda */
+.table-1 {
+    background-color: #ffcccc; /* Warna merah yang lebih lembut */
+}
+
+.table-2 {
+    background-color: #ccffcc; /* Warna hijau yang lebih lembut */
+}
+
+.table-3 {
+    background-color: #cce6ff; /* Warna biru yang lebih lembut */
+}
+
+.table-4 {
+    background-color: #e6ccff; /* Warna ungu yang lebih lembut */
+}
+
+/* Membuat tabel responsif */
+@media (max-width: 768px) {
+    table {
+        overflow-x: auto; /* Aktifkan gulir horizontal saat layar kecil */
+    }
+}

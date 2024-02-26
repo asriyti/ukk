@@ -1,0 +1,84 @@
+.title {
+    color: black;
+    font-size: 50px;
+    font-family: Inter;
+    font-weight: 200;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap; /* Memungkinkan elemen-elemen untuk turun ke bawah jika tidak cukup tempat */
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.content {
+    width: 49%;
+    height: 100%;
+    background-color: #D9D9D9;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px; /* Menambahkan margin bottom untuk memberi jarak antar elemen */
+}
+
+.id {
+
+    color: black;
+    font-size: 30px;
+    font-family: Inter;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+#id{
+    display: flex;
+    width: 100%;
+}
+.button{
+    margin-left: auto;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    background-color: green;
+    color: white;
+}
+.button:hover{
+    height: 55px;
+    background-color: greenyellow;
+    color: black;
+}
+.media-content{
+    width: 100%;
+    display: flex;
+}
+.gambar{
+    width: 40%;
+    margin-left: auto;
+}
+.gambar img{
+    width: 100%;
+}
+.text {
+    width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .id {
+        font-size: 25px;
+    }
+
+    .content-container {
+        flex-direction: column;
+    }
+
+    .content {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

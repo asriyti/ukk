@@ -1,0 +1,304 @@
+.unggulan-container {
+    width: 100%;
+    height: 320px;
+    background-color: #949494;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.card {
+    width: calc(16.666% - 10px);
+    height: 290px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: rgb(74, 82, 74);
+    margin-left: 5px;
+    margin-right: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: white;
+}
+.unggulan-judul{
+    background-color: rgba(0, 0, 0, 0.345);
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+    .unggulan-container {
+        height: 280px;
+        flex-wrap: nowrap;
+    }
+
+    .card {
+        width: calc(22% - 10px);
+        /* Mengurangi lebar card menjadi 20% */
+        height: 270px;
+        margin-top: 5px;
+        display: none;
+    }
+
+    .card:nth-child(-n+6) {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 801px) and (max-width:1000px) {
+    .unggulan-container {
+        height: 270px;
+        flex-wrap: nowrap;
+    }
+
+    .card {
+        width: calc(25% - 10px);
+        height: 260px;
+        margin-top: 5px;
+        display: none;
+    }
+
+    .card:nth-child(-n+5) {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width:800px) {
+    .unggulan-container {
+        height: 250px;
+        flex-wrap: nowrap;
+    }
+
+    .card {
+        width: calc(25% - 10px);
+        height: 240px;
+        margin-top: 5px;
+        display: none;
+    }
+
+    .card:nth-child(-n+4) {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .unggulan-container {
+        height: 220px;
+        flex-wrap: nowrap;
+    }
+
+    .card {
+        width: calc(33.333% - 10px);
+        height: 210px;
+        margin-top: 5px;
+        display: none;
+    }
+
+    .card:nth-child(-n+3) {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:600px) {
+    .unggulan-container {
+        height: 220px;
+        flex-wrap: nowrap;
+    }
+
+    .card {
+        width: calc(32% - 10px);
+        height: 210px;
+        margin-top: 5px;
+        display: none;
+    }
+
+    .card:nth-child(-n+3) {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width:500px) {
+    .unggulan-container {
+        height: 190px;
+        flex-wrap: nowrap;
+    }
+
+    .card {
+        width: calc(32% - 10px);
+        height: 180px;
+        margin-top: 5px;
+        display: none;
+    }
+
+    .card:nth-child(-n+3) {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width:400px) {
+    .unggulan-container {
+        height: 200px;
+        flex-wrap: nowrap;
+    }
+
+    .card {
+        width: calc(32% - 10px);
+        height: 190px;
+        margin-top: 5px;
+        display: none;
+    }
+
+    .card:nth-child(-n+3) {
+        display: block;
+    }
+}
+
+.container-bawah {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.card-container {
+    box-sizing: border-box;
+    width: calc(14.2857% - 10px);
+    height: 280px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background-size: cover;
+    /* Atau gunakan 'contain' sesuai kebutuhan */
+    background-position: center;
+    /* Opsional: atur posisi background image */
+    background-repeat: no-repeat;
+}
+
+.card-container-atas {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-judul {
+    background-color: rgba(0, 0, 255, 0.267);
+    margin-top: 5px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.card-rating {
+    color: black;
+    background-color: yellow;
+    width: 40px;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.card-container-bawah {
+    height: 85px;
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-link:hover {
+    background-color: blue;
+}
+
+.card-kategori {
+    margin: 0;
+    background-color: rgba(0, 0, 255, 0.267);
+    color: white;
+    margin-top: auto;
+}
+
+.card-penulis {
+    margin: 0;
+    background-color: rgba(0, 0, 255, 0.267);
+    color: white;
+}
+
+.card-tahun {
+    margin: 0;
+    background-color: rgba(0, 0, 255, 0.267);
+    color: white;
+    margin-bottom: 2px;
+}
+
+@media (max-width: 1200px) {
+    .card-container {
+        width: calc(16.666% - 10px);
+        /* 6 cards per row for smaller screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .card-container {
+        width: calc(20% - 10px);
+        /* 5 cards per row for even smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        width: calc(25% - 10px);
+        /* 4 cards per row for small screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .card-container {
+        width: calc(33.333% - 10px);
+        /* 3 cards per row for extra small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        width: calc(50% - 10px);
+        /* 2 cards per row for even smaller screens */
+    }
+}
+
+.kategori-container {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(185, 195, 137);
+    display: flex;
+    margin-top: 20px;
+}
+
+.kategori-container p {
+    font-size: 20px;
+    width: auto;
+    height: 100%;
+    margin-top: 0;
+    color: white;
+    margin-left: 5px;
+    margin-top: 8px;
+}
+
+.kategori-container a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: 5px;
+    color: rgb(1, 81, 255);
+    margin-top: 8px;
+
+}
+
+.buku-kategori {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+}

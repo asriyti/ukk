@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <script src="css/script.js" defer></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <nav class="nav-container">
+        <div class="nav-atas-container">
+            <div class="nav-logo">
+                <p class="nav-logo-title">Asri Library</p>
+                <P class="nav-logo-subtitle">Asriyati</P>
+            </div>
+            <div class="nav-search-container">
+                <input type="search" placeholder="cari..." class="nav-search">
+                <button type="submit" class="nav-search-button">Cari</button>
+            </div>
+        </div>
+        <div class="nav-bawah-container">
+            <div class="nav-bawah-kiri">
+                <a href="home.html" class="nav-home-container active">
+                    Home
+                </a>
+                <div class="nav-kategori-container">
+                    <select>
+                        <option disabled selected>Pilih Kategori</option>
+                        <option>novel</option>
+                        <option>fiksi</option>
+                        <option>sejarah</option>
+                    </select>
+                </div>
+            </div>
+            <div class="nav-bawah-kanan">
+                <img src="hamburger.png" class="hamburger" id="hamburgerIcon">
+                <a href="koleksi.html" class="nav-koleksi-container" >Koleksi</a>
+                <a href="pinjaman.html" class="nav-pinjaman-container ">Pinjaman</a>
+                <a href="../landing.html" class="nav-logout-container ">Logout</a>
+            </div>
+        </div>
+            <div class="dropdown" id="dropdownMenu">
+                <a href="koleksi.html" class="">Koleksi</a>
+                <a href="daftar-pinjaman.html" class="">Pinjaman</a>
+                <a href="#" class="">Logout</a>
+            </div>
+    </nav>
+
+</body>
+
+</html>

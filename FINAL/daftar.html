@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAFTAR</title>
+  <style>
+body {
+    font-family:'sans-serif';
+    background-image: url("/img/gambar.png");
+}
+
+.container {
+    width: 360px;
+    margin:  auto;
+    padding: 20px;
+    background-color: #dfceed;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1);
+    margin-top:70px;
+    height: 500px;
+
+}
+
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 41px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 9px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+input[type="submit"] {
+    padding: 8px;
+    background-color:rgb(101, 72, 107);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    vertical-align: center;
+    width: 160px;
+    height: 40px;
+    margin-left: 100px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input[type="submit"]:hover {
+    background-color: black;
+
+}
+
+p {
+
+    margin-top: 7px;
+    font-size: 13px;
+    margin-left: 110px;
+}
+img {
+            height: 90px;
+            width: 105px;
+            padding: 0px;
+            margin-left: 25px;
+            margin-bottom: 40px;
+            margin-top: 30px;
+        }
+
+        .logo-container { 
+            display: flex;
+            
+
+        }
+
+        .logo-container p {
+            font-size: 30px;
+            margin-left: 0;
+            margin-top: 60px;
+            font-family: 'Aclonica',sans-serif;
+        }
+  </style>
+ 
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo-container">
+      <img src="admin/gambar/logo.png">
+      <p>Asri Library</p>
+    </div>
+
+      <form method="post" action="daftar.php">
+          
+          <input type="text" name="nama-lengkap" placeholder="Nama Lengkap" required>
+        
+        
+          <input type="text" name="nama-pengguna" placeholder="Nama Pengguna" required>
+        
+          
+          <input type="text" name="email" placeholder="Email" required>
+        
+          
+          <input type="password" name="kata-sandi" placeholder="Kata Sandi" required>
+       
+         
+          <input type="text" name="alamat" placeholder="Alamat" required>
+        
+        <div>
+          <input type="submit" class="submit" value="Daftar">
+        </div>
+     
+          <p>Sudah punya akun? <a href="masuk.html">Masuk</a></p>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</body>
+
+</html>

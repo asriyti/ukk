@@ -1,0 +1,39 @@
+.form-container {
+    margin-top: 10px;
+    margin-left: 5%;
+    width: 90%;
+}
+
+.form {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input {
+    height: 30px;
+    width: 98%;
+}
+
+textarea {
+    width: 98%;
+}
+
+.button {
+    background-color: blue;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+}
+
+.button:hover {
+    background-color: rgb(47, 47, 88);
+}
+
+@media (max-width:600px) {
+    .button {
+        width: 100%;
+    }
+}

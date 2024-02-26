@@ -1,0 +1,95 @@
+.container {
+    width: 100%;
+    display: flex;
+}
+
+.bagian-kanan {
+    width: 50%;
+    background-color: #D9D9D9;
+    height: 500px;
+}
+.form-container{
+    margin-top: 150px;
+}
+.form{
+    width: 100%;
+}
+.form input{
+    width: 90%;
+    margin-left: 5%;
+    height: 30px;
+    margin-bottom: 30px;
+}
+.submit{
+    margin-top: 50px;
+    width: 30%;
+    height: 35px;
+    margin-left: 35%;
+    background-color: #001AFF;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.submit:hover{
+    color: white;
+    width: 32%;
+    margin-left:34% ;
+}
+.bagian-kiri {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.text-kiri {
+    margin: auto;
+}
+
+.text-kiri p {
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 100;
+    word-wrap: break-word;
+}
+.belum-ada-akun {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.akun, .link {
+    text-align: center;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .bagian-kanan, .bagian-kiri {
+        width: 100%;
+    }
+    .bagian-kanan{
+        height: 400px;
+    }
+    .form-container {
+        margin-top: 20%;
+    }
+
+    .submit {
+        margin-left: 5%;
+        width: 90%;
+        margin-top: 10px;
+
+    }
+    .submit:hover {
+        width: 92%;
+        margin-left: 4%;
+    }
+}

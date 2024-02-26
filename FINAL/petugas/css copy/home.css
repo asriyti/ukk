@@ -1,0 +1,93 @@
+
+.container {
+    display: flex;
+}
+.mt-1{
+    margin-left: 50px;
+}
+.container1 {
+    margin: 4%;
+    border-radius: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Existing styles for .menu */
+.menu {
+    width: 18%;
+    height: 94%;
+    background-color: rgb(84, 70, 70);
+    margin: 1%;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu:hover {
+    background-color: red;
+}
+
+.isi {
+    width: 100%;
+    margin-top: 180px;
+}
+
+.isi p {
+   
+    color: white;
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .container {
+        height: 700px;
+        width: 98%;
+        margin: 1%;
+        background-color: rgb(127, 136, 136);
+        border-radius: 20px;
+        display: flex;
+        overflow: auto;
+    }
+
+    .menu {
+        width: 80%;
+        height: 30%;
+        background-color: rgb(84, 70, 70);
+        margin: 1%;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .isi {
+        width: 100%;
+        margin-top: 100px;
+    }
+    .menu:hover{
+        background-color: red;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        height: 700px;
+        width: 98%;
+        margin: 1%;
+        background-color: rgb(127, 136, 136);
+        border-radius: 20px;
+        display: flex;
+        overflow: auto;
+    }
+
+    .menu {
+        width: 50%;
+        height: 20%;
+        background-color: rgb(84, 70, 70);
+        margin: 1%;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .isi {
+        width: 100%;
+        margin-top: 55px;
+    }
+}
